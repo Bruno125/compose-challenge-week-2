@@ -1,17 +1,21 @@
-# Put title of your app here
-
-<!--- Replace <OWNER> with your Github Username and <REPOSITORY> with the name of your repository. -->
-<!--- You can find both of these in the url bar when you open your repository in github. -->
-![Workflow result](https://github.com/<OWNER>/<REPOSITORY>/workflows/Check/badge.svg)
-
+# Basketball Countdown Timer
+![Workflow result](https://github.com/bruno125/compose-challenge-week-2/workflows/Check/badge.svg)
 
 ## :scroll: Description
-<!--- Describe your app in one or two sentences -->
-
+This app allows you to manage the timers for a basketball game, which has:
+- a 24-seconds shot clock for each play
+- a 12-minute time clock for each quarter.
 
 ## :bulb: Motivation and Context
-<!--- Optionally point readers to interesting parts of your submission. -->
-<!--- What are you especially proud of? -->
+
+Motivation:
+My very first Android app 8 years ago was a (much more simple) basketball timer as well.
+I'm happy to see not only my progress over the years, but also Android's with Compose.
+
+Interesting features:
+- Canvas API: the digital board is drawn manually using Compose's powerful `Canvas` API.
+- States: redraw is triggered by state changes
+- Animations: when the shot clock runs out of time, a rainbow animation is performed using `Animation` APIs.
 
 
 ## :camera_flash: Screenshots

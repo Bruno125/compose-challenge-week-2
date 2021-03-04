@@ -13,14 +13,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.androiddevchallenge.ui.theme
+package com.example.androiddevchallenge.ui.models
 
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Shapes
-import androidx.compose.ui.unit.dp
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.geometry.Size
 
-val shapes = Shapes(
-    small = RoundedCornerShape(4.dp),
-    medium = RoundedCornerShape(4.dp),
-    large = RoundedCornerShape(0.dp)
+data class DrawArea(
+    val topLeft: Offset,
+    val size: Size,
+    val gridSize: Int
+) {
+    val cellSize: Float by lazy { size.minDimension / gridSize }
+    fun cells(size: Int): Float = cellSize * size
+}
+
+data class GridArea(
+    val verticalCells: Int,
+    val horizontalCells: Int,
+    val offset: GridArea? = null
 )

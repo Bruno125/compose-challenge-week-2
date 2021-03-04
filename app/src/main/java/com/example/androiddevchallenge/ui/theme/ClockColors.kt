@@ -15,9 +15,29 @@
  */
 package com.example.androiddevchallenge.ui.theme
 
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.Color
 
-val purple200 = Color(0xFFBB86FC)
-val purple500 = Color(0xFF6200EE)
-val purple700 = Color(0xFF3700B3)
-val teal200 = Color(0xFF03DAC5)
+class ClockColors(
+    background: Color,
+    on: Color,
+    off: Color,
+    light: Color,
+    secondary: Color,
+    onSecondary: Color
+) {
+    var background by mutableStateOf(background)
+        private set
+    var on by mutableStateOf(on)
+        private set
+    var off by mutableStateOf(off)
+        private set
+    var light by mutableStateOf(light)
+        private set
+    var secondary by mutableStateOf(secondary)
+        private set
+    var onSecondary by mutableStateOf(onSecondary)
+        private set
+}
