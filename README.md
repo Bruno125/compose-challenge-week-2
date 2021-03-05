@@ -1,27 +1,31 @@
-# Template repository
+# Basketball Countdown Timer
+![Workflow result](https://github.com/bruno125/compose-challenge-week-2/workflows/Check/badge.svg)
 
-Template repository for the Jetpack Compose [#AndroidDevChallenge](https://developer.android.com/dev-challenge).
+## :scroll: Description
+This app allows you to manage the timers for a basketball game, which has:
+- a 24-seconds shot clock for each play
+- a 12-minute time clock for each quarter.
 
-## Getting started
-Copy this repository by pressing the "Use this template" button in Github.
-Clone your repository and open it in the latest [Android Studio (Canary build)](https://developer.android.com/studio/preview).
+## :bulb: Motivation and Context
 
-## Submission requirements
-- Follow the challenge description on the project website: [developer.android.com/dev-challenge](https://developer.android.com/dev-challenge)
-- All UI should be written using Jetpack Compose
-- The Github Actions workflow should complete successfully
-- Include two screenshots of your submission in the [results](results) folder. The names should be
-  screenshot_1.png and screenshot_2.png.
-- Include a screen record of your submission in the [results](results) folder. The name should be
-  video.mp4
-- Replace the contents of [README.md](README.md) with the contents of [README-template.md](README-template.md) and fill out the template.
+Motivation:
+My very first Android app 8 years ago was a (much more simple) basketball timer as well.
+I'm happy to see not only my progress over the years, but also Android's with Compose.
 
-## Code formatting
-The CI uses [Spotless](https://github.com/diffplug/spotless) to check if your code is formatted correctly and contains the right licenses.
-Internally, Spotless uses [ktlint](https://github.com/pinterest/ktlint) to check the formatting of your code.
-To set up ktlint correctly with Android Studio, follow one of the [listed setup options](https://github.com/pinterest/ktlint#-with-intellij-idea).
+Features:
+- :art: Canvas API: the digital board is drawn manually using Compose's powerful `Canvas` API.
+- :clapper: States: redraws are triggered by state changes.
+- :rocket: Animations: color changes, bounce & shake animation are done using `Animation` APIs.
 
-Before committing your code, run `./gradlew app:spotlessApply` to automatically format your code.
+Additionally, it's pretty cool how easy it is to interact with the Canvas in Compose. Many years ago
+I did a talk ([Android Custom Views](https://speakerdeck.com/bruno125/android-custom-views)) in
+which I talked about how to create a very similar clock implementation. Compose makes it much
+simpler, no need to deal with `onDraw`, `onMeasure`, `onLayout`, `resolvedSize`, etc.!
+
+
+## :camera_flash: Screenshots
+<!-- You can add more screenshots here if you like -->
+<img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_2.png" width="260">
 
 ## License
 ```
